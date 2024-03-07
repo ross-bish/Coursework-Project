@@ -48,8 +48,8 @@ Now, let's write some simple code to perform the unit tests based on this test t
 ````
 
 In this example
-	• We have a test table with different scenarios, and we run the calculate_average function with the provided inputs. 
-	• We then check if the result matches the expected output and print the status of each test.
+- We have a test table with different scenarios, and we run the calculate_average function with the provided inputs. 
+- We then check if the result matches the expected output and print the status of each test.
 
 This is a basic example, and in real-world scenarios, you might use specialized testing libraries like unittest or pytest to organize and run your tests more efficiently.
 
