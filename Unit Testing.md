@@ -21,7 +21,8 @@ Now, let's set up a test table with different cases to check if the function beh
 
 
 Now, let's write some simple code to perform the unit tests based on this test table:
-''''py
+
+````py
 	# Define test cases
 	test_cases = [
 	    ([1, 2, 3, 4, 5], 3.0),
@@ -44,7 +45,7 @@ Now, let's write some simple code to perform the unit tests based on this test t
 	        status = "Fail"
 	    
 	    print("Test - Input:", input_data, ", Expected:", expected_output, ", Result:", result, ", Status:", status)
-''''
+````
 
 In this example
 	• We have a test table with different scenarios, and we run the calculate_average function with the provided inputs. 
@@ -55,7 +56,7 @@ This is a basic example, and in real-world scenarios, you might use specialized 
 ### ⚔️Task - Experiment with the attached code and see if you can create a testing table of your own.
 
 
-Sample Code - 2
+## Sample Code - 2
 ````py
 # Function to calculate the average of a list of numbers
 def calculate_average(numbers):
@@ -87,20 +88,20 @@ for i, (input_data, expected_output) in enumerate(test_cases, 1):
 ### 💡Note: Let's explore how this final for loop works
 
 
-1. for i, (input_data, expected_output) in enumerate(test_cases, 1):
+1. `for i, (input_data, expected_output) in enumerate(test_cases, 1):`
    - This line is a `for` loop that iterates through each test case in the `test_cases` list.
    - `enumerate(test_cases, 1)` is used to loop through the `test_cases` list along with an index `i`. The `1` indicates the starting index.
    - `(input_data, expected_output)` is a tuple unpacking. It assigns the values of each test case to `input_data` and `expected_output`.
 
-2. result = calculate_average(input_data)`
+2. `result = calculate_average(input_data)`
    - This line calls the `calculate_average` function with the `input_data` from the current test case.
    - The result is stored in the variable `result`.
 
-3. status = "Pass" if result == expected_output else "Fail"
+3. `status = "Pass" if result == expected_output else "Fail"`
    - This is a conditional (ternary) statement. It checks if the `result` is equal to the `expected_output`.
    - If they are equal, it assigns the string "Pass" to the variable `status`; otherwise, it assigns "Fail".
 
-4. print(f"Test {i}: {status} - Input: {input_data}, Expected: {expected_output}, Result: {result}")
+4. `print(f"Test {i}: {status} - Input: {input_data}, Expected: {expected_output}, Result: {result}")`
    - This line prints the result of the test.
    - It uses an f-string to format the output, displaying the test number (`i`), the status (`Pass` or `Fail`), the input data, the expected output, and the actual result.
 
@@ -108,7 +109,7 @@ So, in summary, this code runs a series of tests, calculates the result using th
 
 
 
-Sample Code - 3
+## Sample Code - 3
 ````py
 # Function to calculate the average of a list of numbers
 def calculate_average(numbers):
@@ -136,7 +137,8 @@ for i, (input_data, expected_output) in enumerate(test_cases, 1):
 # Part B: Unit Testing - Login Page 👨🏽‍💻
 Now let's create a simple example of a login page, a function to validate the User's login credentials, and a test table with various test cases. 
 
-	1. Firstly, here is the code for a basic login function:
+1. Firstly, here is the code for a basic login function:
+ 
 ````py
 	# Function to validate login credentials
 	def validate_login(username, password):
@@ -151,7 +153,8 @@ Now let's create a simple example of a login page, a function to validate the Us
 	        return False
 ````
 
-	2. Now, let's create a test table with different test cases:
+2. Now, let's create a test table with different test cases:
+
 ````py
 	# Test cases for login validation
 	login_test_cases = [
@@ -163,7 +166,8 @@ Now let's create a simple example of a login page, a function to validate the Us
 	]
 
 ````
-	3. Now, let's perform the tests:
+
+3. Now, let's perform the tests:
 
 ````py
 	# Perform the login tests
@@ -185,15 +189,15 @@ Now let's create a simple example of a login page, a function to validate the Us
 
 ### 💡Note: In this example
 
-	- The ``validate_login`` function checks if the provided username and password match a hardcoded valid combination.
-	- The ``login_test_cases`` list contains different scenarios, including correct and incorrect username/password combinations.
-	- The loop goes through each test case, runs the  ``validate_login`` function, compares the result with the expected outcome, and prints the status of each test.
+- The ``validate_login`` function checks if the provided username and password match a hardcoded valid combination.
+- The ``login_test_cases`` list contains different scenarios, including correct and incorrect username/password combinations.
+- The loop goes through each test case, runs the  ``validate_login`` function, compares the result with the expected outcome, and prints the status of each test.
 
 Feel free to customize the test cases or the  validate_login function based on the specific requirements of your Coursework project.
 
 
 
-Sample Code - 2
+## Sample Code - 2
 ````py
 # Function to validate login credentials
 def validate_login(username, password):
