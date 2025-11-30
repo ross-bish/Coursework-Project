@@ -12,9 +12,10 @@ You might notice that the more you study, the higher your grades tend to be.
 Linear regression can help you create a formula (equation of a line) to predict your grades based on the number of hours you study.
 
 How does it work?
-	• The goal is to find the best-fitting line that minimizes the difference between the predicted values (what the line says) and the actual values in your data.
 
-Applying Linear Regression in Python - In Python, there are libraries like ``scikit-learn`` that make it easy to use linear regression. 
+- The goal is to find the best-fitting line that minimizes the difference between the predicted values (what the line says) and the actual values in your data.
+
+- Applying Linear Regression in Python - In Python, there are libraries like ``scikit-learn`` that make it easy to use linear regression. 
 
 ### Here's a simple example:
 
